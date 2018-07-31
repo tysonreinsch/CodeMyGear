@@ -1,0 +1,332 @@
+* {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#main {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  border: 1px solid #333;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background: #333;
+}
+
+#title {
+  color: #0a0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 400px;
+  padding: 10px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.commentItem {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+#input {
+  display: flex;
+}
+
+#text {
+  resize: none;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+#submit {
+  font-size: 12pt;
+  padding: 20px;
+  background: #000000;
+  color: white;
+}
+
+/*****************/
+
+
+
+
+.gallery {
+  background: #eee;
+  width: 500px;
+  margin: 1em auto;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery .hero {
+  padding: 1em;
+}
+.gallery .thumbs {
+  background: #ddd;
+  padding: 1em;
+  text-align: center;
+}
+.gallery .thumbs img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.gallery .active {
+  opacity: 0.5;
+}
+
+/********************/
+
+a {
+  color: #ffffff
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+}
+
+th {
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.innerpage {
+  margin-top:80px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
+  text-align: center
+}
+
+/* .container h2 {
+  text-align: center
+} */
+
+.container2 {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 130px;
+  border: 2px solid black;
+}
+
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.header {
+  background: url(http://www.krgi.com/upload/sports/NIVGOBDJEGGOEBC.20170920214924.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.header .container {
+  position: relative;
+  top: 50px;
+}
+
+.header h1 {
+  color: #ffffff;
+  line-height: 100px;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.header2 {
+  background-color: #E41C38;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.header2 img {
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+/* I know what this media tag does but I haven't messed with it yet */
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 100px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: background .5s;
+}
+
+.nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul li {
+  color: #ffffff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s;
+}
+
+.nav2 {
+  background-color: #000;
+  height: 100%;
+  width: 120px;
+  float: left;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+
+.nav2 ul {
+  list-style:none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav2 ul li {
+  color: #ffffff;
+  display: block;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background .5s;
+}
+
+.main .container {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(https://sports-images.vice.com/images/2015/04/26/death-lawrence-phillips-and-the-lawless-cornhuskers-team-that-no-one-could-beat-body-image-1430057195.jpg) center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: right;
+}
+
+.jumbotron p {
+  color: #fff;
+  text-align: right;
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right;
+}
+
+.footer {
+  background: #000;
+  height: 80px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,108 @@
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Highlights</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body class="innerpage">
+
+  <header>
+    <div class="header2">
+        <div><img  overflow ="auto" width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Nebraska_Cornhuskers_logo%2C_1992%E2%80%932003.svg"
+              align="left";> </div>
+        <div><h1>Gallery</h1></div>
+    </div>
+  </header>
+
+  <div class="nav2">
+    <div class="container">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./awards.html">Awards</a></li>
+        <li><a href="./boxscores.html">Box Scores</a></li>
+        <li><a href="./highlights.html">Highlights</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./guestbook.html">Guestbook</a></li>
+        <li><a href="http://www.huskers.com/SportSelect.dbml?DB_OEM_ID=100&SPID=22&SPSID=4&KEY=&Q_SEASON=1995" target ="_blank">Roster</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="gallery">
+  <div class="hero"></div>
+  <div class="thumbs"></div>
+</div>
+
+
+
+<script>
+// the images variable is an array of images to be in your gallery.
+// add 4 images to this array to be displayed
+var images = [
+  'https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/d/50/d50d6c22-b5c8-11e6-9b67-d30211ef9565/583cc8ab3461e.image.jpg',
+  'https://bloximages.chicago2.vip.townnews.com/journalstar.com/content/tncms/assets/v3/editorial/0/6e/06e9993c-db18-11e5-bc51-ef102e8b1601/55bc235866e8b.image.jpg',
+  'https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/e/97/e9711074-728f-11e5-8e79-bbacd19a7f14/561e819809e08.image.jpg',
+  'http://www.bostonherald.com/sites/default/files/styles/gallery/public/media/ap/2017/07/27/93c2adfbe70f47548f83be479a7baa53.jpg?itok=kkPLoKW9'
+];
+
+// galleryBox is the div with a class of gallery
+// find the div and set the variable to the DOM Element
+var galleryBox = document.createElement('galleryBox');
+
+// heroImage is setting up a template to be placed as your hero image
+// we're using the images array and grabbing the first image (ie. 0th place)
+var heroImage = `<img src="${images[0]}" />`;
+
+// thumbs is a blank variable right now
+// you need to:
+  // loop through your images
+  // make a template of an image tag
+  // set the src of the img tag to the current image you're looping over
+  // add that image to the thumbs variable (thumbs += template)
+var thumbs = ""
+
+images.forEach(function(image){
+    var newImage = `<img src="${image}"/>`
+    thumbs = thumbs + newImage
+});
+
+// find the hero div using querySelector()
+// set the innerHTML to your heroImage template (what & how?)
+var hero = document.querySelector('.hero')
+hero.innerHTML = heroImage
+
+
+// find the thumbs div using querySelector()
+// set the innerHTML to your thumbs template (what & how)
+var thumbsDiv = document.querySelector('.thumbs')
+thumbsDiv.innerHTML = thumbs
+// add an event listener on the galleryBox div
+// use a 'click' listener
+// in the function that handles the click:
+  // create a variable for a new image template
+  // set the src of the image to the src of the thumbnail you clicked on (hint use event variable)
+  // find the hero div with querySelector()
+  // set the innerHTML of that div to be equal to your new hero template
+
+var picSwap = document.querySelector('.gallery');
+picSwap.addEventListener('click', function() {
+  var newImage = `<img src="${event.target.src}"/>`
+  hero.innerHTML = newImage;
+});
+
+
+// THAT'S IT! go to your page and test it out!
+// Build on this and implement it to your own site.
+    </script>
+
+  <footer class="footer">
+    <div class="container2">
+      <p>Created by Tyson wooo!</p>
+    </div>
+  </footer>
+
+  </body>
+</html>
