@@ -103,19 +103,22 @@ html, body {
   padding: 0;
 }
 
+h2 {
+  text-align: center
+}
+
 body {
   font-family: 'Arial', sans-serif;
   font-weight: 500;
 }
 
-th {
-  text-align: left;
-}
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  text-align: left
 }
+
+tr:nth-child(even){background-color: #D3D3D3}
 
 .innerpage {
   margin-top:80px;
@@ -139,11 +142,29 @@ table, th, td {
   border: 2px solid black;
 }
 
+.container3 {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 130px
+}
+
 .flex-container {
-  display:flex;
-  flex-direction: row;
+  display: flex;
+  flex-direction:row;
   justify-content: center;
-  align-items: center
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+  text-align: center
 }
 
 .header {
