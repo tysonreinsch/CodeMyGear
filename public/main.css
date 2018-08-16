@@ -112,10 +112,18 @@ body {
   font-weight: 500;
 }
 
-table, th, td {
+th, td {
   border: 1px solid black;
   border-collapse: collapse;
-  text-align: left
+  text-align: left;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 250px
 }
 
 tr:nth-child(even){background-color: #D3D3D3}
